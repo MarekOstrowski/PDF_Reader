@@ -1,6 +1,8 @@
 import pypdf
 import os
 
+#  Autor Marek Ostrowski
+
 os.chdir("C:\\Users\\ostro\\Python\\PDF")
 pdfFile = ('dhl24.pdf')
 reader = pypdf.PdfReader(pdfFile)
