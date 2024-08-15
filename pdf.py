@@ -7,8 +7,12 @@ os.chdir("C:\\Users\\ostro\\Python\\PDF")
 pdfFile = ('dhl24.pdf')
 reader = pypdf.PdfReader(pdfFile)
 page1 = reader.pages[0]
-text = page1.extract_text()
-print(text)
+
+#  Write Firt page to PDF
+output_pdf = pypdf.PdfWriter()
+output_pdf.add_page(page1)
+output_pdf.write("first_page.pdf")
+
 
 
 
